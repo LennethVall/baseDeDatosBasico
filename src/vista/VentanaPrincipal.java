@@ -85,8 +85,14 @@ public class VentanaPrincipal extends JFrame implements ActionListener{
 		try 
 		{
 			accesoBD.consultaProveedores1(proveedores);
-			for (Proveedor proveedor: proveedores.values())
-				textArea.append(proveedor.getNombre());
+			for (Proveedor proveedor : proveedores.values()) {
+			    textArea.append("CÓDIGO: " + proveedor.getCodigo() + "\n");
+			    textArea.append("NOMBRE: " + proveedor.getNombre() + "\n");
+			    textArea.append("TELÉFONO: " + proveedor.getTfno() + "\n");
+			    textArea.append("EMAIL: " + proveedor.getEmail() + "\n");
+			    textArea.append("-----------------------------\n");
+			}
+
 			
 		}catch(Exception exception)
 		{
