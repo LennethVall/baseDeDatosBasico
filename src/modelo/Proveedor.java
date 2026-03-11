@@ -1,5 +1,7 @@
 package modelo;
 
+import java.awt.Component;
+
 public class Proveedor {
 	private int codigo;
 	private String nombre;
